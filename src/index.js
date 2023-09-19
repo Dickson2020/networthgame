@@ -9,8 +9,9 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <DynamicContextProvider
+      theme="dark"
       settings={{
-        environmentId: "e2196efe-7a6d-4ac9-9d95-4f720090ea0a",
+        environmentId: process.env.REACT_APP_ENV_ID,
       }}
     >
       <Layout>

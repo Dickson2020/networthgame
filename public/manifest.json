@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Dynamic DApp",
+  "name": "Dynamic DApp authentication sample",
   "icons": [
     {
       "src": "favicon.ico",

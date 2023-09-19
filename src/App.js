@@ -4,7 +4,6 @@ import Login from "./components/Login";
 
 function App() {
   const { setShowAuthFlow, user, handleLogOut } = useDynamicContext();
-
   if (!user) {
     return (
       <>
@@ -14,7 +13,7 @@ function App() {
   }
   return (
     <>
-      <Dashboard handleLogOut={handleLogOut} />
+      <Dashboard user={user} handleLogOut={handleLogOut} />
     </>
   );
 }

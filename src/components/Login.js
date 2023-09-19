@@ -19,7 +19,7 @@ export default function Login({ setShowAuthFlow }) {
   return (
     <>
       <div className="flex flex-col gap-8 items-center justify-center">
-        <h1 className="mt-2 text-3xl font-bold tracking-tight">Dynamics App</h1>
+        <h1 className="mt-2 text-3xl font-bold tracking-tight">Dynamic App</h1>
         <div className="w-full max-w-[500px]" ref={container}></div>
         <button
           onClick={() => setShowAuthFlow(true)}
