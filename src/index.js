@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import { DynamicContextProvider } from "@dynamic-labs/sdk-react";
 import "./index.css";
 import App from "./App";
+import Layout from "./components/layout/Layout";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -12,7 +13,9 @@ root.render(
         environmentId: "e2196efe-7a6d-4ac9-9d95-4f720090ea0a",
       }}
     >
-      <App />
+      <Layout>
+        <App />
+      </Layout>
     </DynamicContextProvider>
   </React.StrictMode>
 );
