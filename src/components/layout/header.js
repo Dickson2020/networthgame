@@ -1,9 +1,19 @@
 import { BlockChainIcon } from "../../interface/icons/blockChain";
+import { DevToLogo } from "../../interface/icons/dev-to";
 
 export default function Header() {
   return (
-    <div className="w-full p-4">
-      <BlockChainIcon className="w-14" />
-    </div>
+    <ul className="flex items-center justify-between w-full p-4">
+      <li>
+        <a href="/" className="w-full">
+          <BlockChainIcon className="w-14" />
+        </a>
+      </li>
+      <li>
+        <a href="/https://dev.to/davidadeola" className="w-full ">
+          <DevToLogo className="w-14" />
+        </a>
+      </li>
+    </ul>
   );
 }
