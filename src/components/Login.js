@@ -1,21 +1,8 @@
-import React, { useEffect, useRef } from "react";
-import Lottie from "lottie-web";
+import { useLottie } from "../helpers/useLottie";
+import animationData from "../interface/animations/bitcoin-animation.json";
 
 export default function Login({ setShowAuthFlow }) {
-  const container = useRef(null);
-  useEffect(() => {
-    const animation = Lottie.loadAnimation({
-      container: container.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: require("../interface/animations/bitcoin-animation.json"),
-    });
-
-    return () => {
-      animation.destroy();
-    };
-  }, []);
+  const { container } = useLottie(animationData, true);
   return (
     <>
       <div className="flex flex-col gap-8 items-center justify-center">

@@ -1,21 +1,8 @@
-import React, { useEffect, useRef } from "react";
-import Lottie from "lottie-web";
+import { useLottie } from "../helpers/useLottie";
+import animationData from "../interface/animations/checkmark.json";
 
 export default function Dashboard({ user, handleLogOut }) {
-  const container = useRef(null);
-  useEffect(() => {
-    const animation = Lottie.loadAnimation({
-      container: container.current,
-      renderer: "svg",
-      loop: false,
-      autoplay: true,
-      animationData: require("../interface/animations/checkmark.json"),
-    });
-
-    return () => {
-      animation.destroy();
-    };
-  }, []);
+  const { container } = useLottie(animationData, false);
   return (
     <div className="flex flex-col items-center justify-center h-full w-full m-auto">
       <h1 className="mt-2 text-3xl font-bold tracking-tight">Welcome !!!</h1>

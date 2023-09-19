@@ -5,17 +5,9 @@ import Login from "./components/Login";
 function App() {
   const { setShowAuthFlow, user, handleLogOut } = useDynamicContext();
   if (!user) {
-    return (
-      <>
-        <Login setShowAuthFlow={setShowAuthFlow} />
-      </>
-    );
+    return <Login setShowAuthFlow={setShowAuthFlow} />;
   }
-  return (
-    <>
-      <Dashboard user={user} handleLogOut={handleLogOut} />
-    </>
-  );
+  return <Dashboard user={user} handleLogOut={handleLogOut} />;
 }
 
 export default App;
