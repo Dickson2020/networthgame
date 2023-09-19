@@ -6,12 +6,12 @@ export default function Header() {
     <ul className="flex items-center justify-between w-full p-4">
       <li>
         <a href="/" className="w-full">
-          <BlockChainIcon className="w-14" />
+          <BlockChainIcon className="w-12 md:w-14" />
         </a>
       </li>
       <li>
         <a href="/https://dev.to/davidadeola" className="w-full ">
-          <DevToLogo className="w-14" />
+          <DevToLogo className="w-12 md:w-14" />
         </a>
       </li>
     </ul>

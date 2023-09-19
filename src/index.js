@@ -11,7 +11,7 @@ root.render(
     <DynamicContextProvider
       theme="dark"
       settings={{
-        environmentId: process.env.REACT_APP_TESTING_ENV_ID,
+        environmentId: process.env.REACT_APP_ENV_ID,
       }}
     >
       <Layout>
