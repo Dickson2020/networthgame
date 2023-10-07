@@ -18,5 +18,5 @@ export function useLottie(animationData, replay) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  return { container, replay };
+  return container;
 }

@@ -10,7 +10,11 @@ export default function Header() {
         </a>
       </li>
       <li>
-        <a href="/https://dev.to/davidadeola" className="w-full ">
+        <a
+          href="/https://dev.to/davidadeola"
+          target="_blank"
+          className="w-full"
+        >
           <DevToLogo className="w-12 md:w-14" />
         </a>
       </li>
