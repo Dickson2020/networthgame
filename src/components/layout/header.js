@@ -11,9 +11,10 @@ export default function Header() {
       </li>
       <li>
         <a
-          href="/https://dev.to/davidadeola"
+          href="https://dev.to/davidadeola/bridging-web2-and-web3-simplifying-platform-authentication-with-dynamicxyz-2ahf"
           target="_blank"
           className="w-full"
+          rel="noreferrer"
         >
           <DevToLogo className="w-12 md:w-14" />
         </a>
