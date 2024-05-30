@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { DynamicContextProvider } from "@dynamic-labs/sdk-react";
+import { DynamicWidget, DynamicEmbeddedWidget, useUserWallets,DynamicContextProvider  } from "@dynamic-labs/sdk-react-core";
 import "./index.css";
 import App from "./App";
 import Layout from "./components/layout/Layout";
